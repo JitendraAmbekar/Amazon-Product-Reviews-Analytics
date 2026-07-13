@@ -5,6 +5,30 @@ I built this project to analyze over 42,000+ Amazon product reviews. The main go
 
 ---
 
+## 🏗️ Extended Description (How I Built This Project)
+To complete this project, I created a simple data pipeline that takes messy, raw text and turns it into clean charts. Here is exactly how I worked on it step-by-step:
+
+### 1. Understanding the Data with SQL
+Before doing any charting or coding, I loaded the raw Amazon review dataset into the database. I used SQL queries to check the data quality—like finding missing values, checking total review counts, and cleaning up formatting errors. This gave me a clear picture of what the data looked like.
+
+### 2. Processing Text & Sentiment Analysis with Python
+Raw customer comments are very messy. I used Python (Pandas and TextBlob/NLTK) to clean the text. 
+* I removed unwanted characters, symbols, and common words (stop-words) that don't add value.
+* Then, I ran a Sentiment Analysis model on the cleaned text. This model automatically read each review and gave it a score (Positive, Negative, or Neutral) based on the words the customer used.
+
+### 3. Creating the Dashboard in Power BI
+Once I had the clean data and sentiment scores from Python, I imported the final dataset into Power BI. I connected the tables properly and wrote custom DAX formulas to calculate dynamic metrics (like average ratings and sentiment percentages). Finally, I designed the layout to make it look clean and easy for anyone to understand.
+
+---
+
+## 💾 Project Datasets
+*Note: Since the dataset files are very large, GitHub cannot display them directly in the browser. You can click the links below to download them directly from this repository:*
+
+* 📁 [Download Original Raw Dataset](https://github.com/JitendraAmbekar/Amazon_review_analysis/blob/main/तुझ्या_पहिल्या_डेटा_फाईलचे_नाव.csv)
+* 📁 [Download Cleaned Sentiment Dataset](https://github.com/JitendraAmbekar/Amazon_review_analysis/blob/main/तुझ्या_दुसऱ्या_डेटा_फाईलचे_नाव.csv)
+
+---
+
 ## 💼 The Problem I Solved
 In online shopping, if products get bad reviews and low ratings, sales go down immediately. I noticed that many products have issues, but it's hard to read thousands of text reviews manually. 
 

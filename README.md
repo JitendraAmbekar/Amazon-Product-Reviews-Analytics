@@ -4,7 +4,7 @@
 An end-to-end data analytics project using Python (Sentiment Analysis), SQL (Data exploration), and Power BI to analyze 42,000+ Amazon product reviews. The goal is to provide actionable insights into product performance, customer satisfaction, and review trends.
 
 ## 📊 Dashboard Preview
-![Amazon Dashboard](dashboard_screenshot.png) 
+![Amazon Dashboard](Amazon_review_analysis.png)
 
 ## 🛠️ Tech Stack & Tools
 * **Data Analytics & Visualization:** Power BI Desktop
